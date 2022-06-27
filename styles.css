@@ -187,6 +187,18 @@ section {
 .peculiarities .container .list-p {
     display: flex;
     margin: 0 auto;
+}
+
+.item-svg {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 
 }
 
@@ -292,7 +304,6 @@ section.team .container .list .team-card:not(:last-child) {
 }
 
 .team-skill {
-    margin-bottom: 30px;
     color: var(--fontcolor-main);
     font-size: 16px;
     line-height: 1.2;
@@ -300,10 +311,104 @@ section.team .container .list .team-card:not(:last-child) {
 }
 
 .team-article {
-    height: 368px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
+
+.team .container .list .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+}
+
+.team-article .social .ts-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.team-article .social .ts-link:hover {
+    background-color: var(--accent-color);
+
+}
+
+.social-link {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    fill: #AFB1B8;
+}
+
+.social-link:hover,
+:focus {
+    fill: var(--fontcolor)
+}
+
+.social .ts-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* regular-customer */
+
+.regular-customer .regular-list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.regular-customer .regular-list .regular-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+
+.regular-customer .regular-list .regular-item:hover,
+.regular-customer .regular-list .regular-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.regular-list .regular-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.regular-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    fill: #AFB1B8;
+}
+
+.regular-link:focus,
+.regular-link:hover {
+    fill: var(--accent-color);
+}
+
+.regular-customers-headlines {
+    margin-bottom: 50px;
+    font-style: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--fontcolor-secondary);
+}
+
 
 /* Portfolio card  */
 
