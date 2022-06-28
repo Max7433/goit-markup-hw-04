@@ -10,31 +10,41 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-
     <header class="header">
         <div class="container main-nav">
             <nav>
                 <ul class="list header-nav">
-                    <li class="item logo"><a class="logo" href="./index.html" aria-label="ссылка на студию"><span
-                                class="logo-web">Web</span>Studio</a></li>
+                    <li class="item logo">
+                        <a class="logo" href="./index.html" aria-label="ссылка на студию"><span
+                                class="logo-web">Web</span>Studio</a>
+                    </li>
                     <li class="item">
                         <a class="list-link" href="./index.html">Студия</a>
                     </li>
-                    <li class="item"><a class="list-link" href="./portfolio.html"><span
-                                class="current">Портфолио</span></a></li>
+                    <li class="item">
+                        <a class="list-link" href="./portfolio.html"><span class="current">Портфолио</span></a>
+                    </li>
                     <li class="item"><a class="list-link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="list header-nav adress">
                 <li class="item">
+                    <svg width="16px" height="12px">
+                        <use href="./icon.svg#icon-envelope"></use>
+                    </svg>
                     <a class="site-nav" href=" mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="item"><a class="site-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <svg width="10px" height="16px">
+                        <use href="./icon.svg#icon-Vector"></use>
+                    </svg>
+                    <a class="site-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -45,11 +55,21 @@
                 <h1 hidden>Работы</h1>
                 <!-- filter works -->
                 <ul class="list">
-                    <li class="item"><button class="button" type="button">Все</button></li>
-                    <li class="item"><button class="button" type="button">Вебсайты</button></li>
-                    <li class="item"><button class="button" type="button">Приложения</button></li>
-                    <li class="item"><button class="button" type="button">Дизайн</button></li>
-                    <li class="item"><button class="button" type="button">Маркетинг</button></li>
+                    <li class="item">
+                        <button class="button" type="button">Все</button>
+                    </li>
+                    <li class="item">
+                        <button class="button" type="button">Вебсайты</button>
+                    </li>
+                    <li class="item">
+                        <button class="button" type="button">Приложения</button>
+                    </li>
+                    <li class="item">
+                        <button class="button" type="button">Дизайн</button>
+                    </li>
+                    <li class="item">
+                        <button class="button" type="button">Маркетинг</button>
+                    </li>
                 </ul>
                 <ul class="list-card">
                     <li class="card-link">
@@ -75,7 +95,6 @@
 
                                 <h2 class="card-name">Ресторан Seafood</h2>
                                 <p class="card-text">Вебсайт</p>
-
                             </a>
                         </div>
                     </li>
@@ -84,7 +103,6 @@
                             <a href=""><img src="./images/images-portfolio/img4.jpeg" alt="наушники" width="370" />
                                 <h2 class="card-name">Проект Prime</h2>
                                 <p class="card-text">Маркетинг</p>
-
                             </a>
                         </div>
                     </li>
@@ -94,7 +112,6 @@
 
                                 <h2 class="card-name">Проект Boxes</h2>
                                 <p class="card-text">Приложение</p>
-
                             </a>
                         </div>
                     </li>
@@ -102,9 +119,10 @@
                         <div class="card-data">
                             <a href=""><img src="./images/images-portfolio/img6.jpeg" alt="монитор" width="370" />
 
-                                <h2 class="card-name" lang="en">Inspiration has no Borders</h2>
+                                <h2 class="card-name" lang="en">
+                                    Inspiration has no Borders
+                                </h2>
                                 <p class="card-text">Вебсайт</p>
-
                             </a>
                         </div>
                     </li>
@@ -115,7 +133,6 @@
 
                                 <h2 class="card-name">Издание Limited Edition</h2>
                                 <p class="card-text">Вебсайт</p>
-
                             </a>
                         </div>
                     </li>
@@ -125,7 +142,6 @@
 
                                 <h2 class="card-name">Проект LAB</h2>
                                 <p class="card-text">Маркетинг</p>
-
                             </a>
                         </div>
                     </li>
@@ -135,9 +151,9 @@
 
                                 <h2 class="card-name" lang="en">Growing Business</h2>
                                 <p class="card-text">Приложение</p>
-
                             </a>
                         </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -145,15 +161,55 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container">
-            <a class="footer-logo" href="./index.html" aria-label="ссыдка на студию"><span
-                    class="footer-logoweb">Web</span>Studio</a>
-            <ul class="address">
-                <li class="list"><a class="footer-gmaps" href="https://goo.gl/maps/6azqXtSNCnMAoN6U6" target="_blank"
-                        rel="noreferrer noopener">г. Киев,
-                        пр-т Леси Украинки, 26</a></li>
-                <li class="list"><a class="footer-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="list"><a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            <div class="logo-addres">
+                <a class="footer-logo" href="./index.html" aria-label="ссылка на студию"><span
+                        class="footer-logoweb">Web</span>Studio</a>
+                <ul class="address">
+                    <li class="list">
+                        <a class="footer-gmaps" href="https://goo.gl/maps/6azqXtSNCnMAoN6U6" target="_blank"
+                            rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="list">
+                        <a class="footer-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="list">
+                        <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-main">
+                <strong class="social-main-headlines">присоединяйтесь</strong>
+                <ul class="social-footer">
+                    <li class="ts-link">
+                        <a class="social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+                            <svg width="20px" height="20px">
+                                <use href="./icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ts-link">
+                        <a class="social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="twitter">
+                            <svg width="20px" height="20px">
+                                <use href="./icon.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ts-link">
+                        <a class="social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="facebook">
+                            <svg width="20px" height="20px">
+                                <use href="./icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ts-link">
+                        <a class="social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
+                            <svg width="20px" height="20px">
+                                <use href="./icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
