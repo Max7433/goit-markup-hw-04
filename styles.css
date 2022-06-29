@@ -177,11 +177,11 @@ section {
 
 /* section hero */
 
-.hero::before {
-    background-color: rgba(47, 48, 58, 0.4);
-}
+
 
 .hero {
+    display: flex;
+    position: relative;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -193,6 +193,21 @@ section {
     background-repeat: no-repeat;
     background-position: center;
 
+}
+
+.hero:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.4);
+}
+
+.hero .container {
+    position: relative;
 }
 
 
