@@ -170,7 +170,7 @@ section {
 
 
 .list.header-nav.adress .item .item-address {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
 }
