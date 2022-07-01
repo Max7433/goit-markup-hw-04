@@ -175,7 +175,7 @@ section {
 
 }
 
-.list.header-nav.adress .item .site-nav:hover {
+.site-nav:hover {
     color: var(--accent-color);
 }
 
