@@ -159,20 +159,28 @@ section {
     margin-right: 10px;
 }
 
-.svg-site-nav:hover {
+/* .svg-site-nav:hover {
     fill: var(--accent-color);
 }
 
 .item .item-address .site-nav:hover,
 .item .item-address .site-nav:focus {
     color: var(--accent-color);
-}
+} */
 
 
-.list.header-nav.adress .item .item-address {
-    display: inline-flex;
+.site-nav {
+    display: flex;
     align-items: center;
 
+}
+
+.list.header-nav.adress .item .site-nav:hover {
+    color: var(--accent-color);
+}
+
+.site-nav:hover>.svg-site-nav {
+    fill: var(--accent-color);
 }
 
 .list.header-nav.adress .item .site-nav {
